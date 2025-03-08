@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loky Gasy M'zuri | Restaurant</title>
+    <link rel="stylesheet" href="assiete/css/style.css">
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assiete/logo/E23.jfif" alt="Logo">
+    </div>
+
+    <!-- Contenu du site -->
+     
+    <div id="content" style="display: none;">
+        <header>
+            <div class="logo"><img src="assiete/logo/E23.jfif" alt=""></div>
+            <nav>
+                <a href="Menu.html">Menu</a>
+                <a href="Service.html">Service</a>
+                <a href="info.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img src="assiete/img/2.png" alt="Plat malagasy">
+            <img src="assiete/img/3.png" alt="Plat malagasy">
+            <img src="assiete/img/4.png" alt="Plat malagasy">
+            <img src="assiete/img/6.png" alt="Plat malagasy">
+            <div class="hero-text">
+                <h1>Un voyage culinaire au cœur de Madagascar</h1>
+                <p>Découvrez l’authenticité et la richesse des saveurs malagasy, préparées avec passion et tradition.</p>
+                <a href="Explore.html" class="btn">Explorer notre menu</a>
+            </div>
+        </section>
+
+        <section class="reservation">
+            <h2>Réservez une table</h2>
+            <form>
+                <select>
+                    <option>Nombre de personnes</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+                <input type="text" placeholder="Numéro de téléphone">
+                <input type="email" placeholder="Email">
+                <button>Réserver maintenant</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // Attendre que la page soit chargée
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 2000); // Disparaît après 2 secondes
+        });
+    </script>
+</body>
+</html>
